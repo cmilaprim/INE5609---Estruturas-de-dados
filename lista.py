@@ -3,21 +3,6 @@ class Elemento:
         self.valor = valor
         self.proximo = None
     
-    @property
-    def valor(self):
-        return self.__valor
-    
-    @valor.setter
-    def valor(self, valor):
-        self.__valor = valor
-    
-    @property
-    def proximo(self):
-        return self.__proximo
-    
-    @proximo.setter
-    def proximo(self, proximo):
-        self.__proximo = proximo
 
 class Lista:
     def __init__(self):
@@ -165,5 +150,4 @@ lista.inserirNaPosicao(25, 3)
 lista.inserirNaPosicao(35, 5)
 lista.inserirAntesDe(5, lista.inicio)
 lista.removerNaPosicao(0)
-print(lista.acessarDaPosicao(5))
-print(lista.exibirLista()) 
+print(lista.exibirLista())
